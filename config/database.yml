@@ -6,8 +6,8 @@
 #
 default: &default
   adapter: postgresql
-  host:    localhost
-  username: postgres
+  host:    <%= ENV['PGHOST'] %>
+  username: <%= ENV['PGUSER'] %>
   password: 
   encoding: unicode
   pool: 5
